@@ -1,4 +1,4 @@
-// Array of 321 unique messages
+// Array of messages for Hannah and Choco
 const messages = [
     "Have a fantastic day ahead ❤️",
     "You're capable of amazing things ❤️",
@@ -9,42 +9,27 @@ const messages = [
     "Your potential is limitless ❤️",
     "Stay positive and strong ❤️",
     "Dream big, work hard, and make it happen ❤️",
-    "You are braver than you believe ❤️",
-    // Add 311 more unique messages here...
-    "The future belongs to those who believe in their dreams ❤️",
-    "Happiness is not by chance but by choice ❤️",
-    "Make today count—it’s your day ❤️"
+    "You are braver than you believe ❤️"
 ];
 
-// Function to get a random non-repeating message
-let usedMessages = new Set();
-
+// Function to get a random message
 function getRandomMessage() {
-    if (usedMessages.size === messages.length) {
-        // Reset if all messages are used
-        usedMessages.clear();
-    }
-
-    let randomIndex;
-    do {
-        randomIndex = Math.floor(Math.random() * messages.length);
-    } while (usedMessages.has(randomIndex));
-
-    usedMessages.add(randomIndex);
-    return messages[randomIndex];
+    return messages[Math.floor(Math.random() * messages.length)];
 }
 
 // Event listener for the form submission
 document.getElementById("nameForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const userName = document.getElementById("userName").value.trim();
+    const userName = document.getElementById("userName").value.trim().toLowerCase(); // Convert input to lowercase
     const greetingDiv = document.getElementById("greetingMessage");
 
-    if (userName !== "") {
+    if (userName === "hannah" || userName === "choco") {
+        // Display a personalized message for valid usernames
         const randomMessage = getRandomMessage();
-        greetingDiv.innerHTML = `<p>Hello, <strong>${userName}</strong>! ${randomMessage}</p>`;
+        greetingDiv.innerHTML = `<p>Hello, <strong>${userName.charAt(0).toUpperCase() + userName.slice(1)}</strong>! ${randomMessage}</p>`;
     } else {
-        greetingDiv.innerHTML = `<p>Please enter your name to receive your message❤️</p>`;
+        // Display an error message for invalid usernames
+        greetingDiv.innerHTML = `<p style="color: red;">Sorry, only loml is allowed to receive messages ❤️</p>`;
     }
 });
