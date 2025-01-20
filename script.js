@@ -1,15 +1,17 @@
 // Array of messages for target
 const messages = [
-    "Have a fantastic day ahead ❤️",
-    "You're capable of amazing things ❤️",
+    "I will always be grateful to have you in my life ❤️",
+    "You're the primordial sea to my all devouring narwhal ❤️",
     "Believe in yourself, always ❤️",
     "Keep pushing forward, you've got this ❤️",
-    "Every day is a fresh start ❤️",
-    "Be the reason someone smiles today ❤️",
-    "Your potential is limitless ❤️",
-    "Stay positive and strong ❤️",
-    "Dream big, work hard, and make it happen ❤️",
-    "You are braver than you believe ❤️"
+    "You're my favorite, always❤️",
+    "You make me smile everyday ❤️",
+    "You're beautiful❤️",
+    "Can I borrow a kiss? I promise to give it back! ❤️",
+    "I miss you ❤️",
+    "You make me feel special ❤️"
+    "I'm so proud of you ❤️"
+    "hug for you ❤️"
 ];
 
 // Function to get a random message
