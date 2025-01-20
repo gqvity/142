@@ -1,4 +1,4 @@
-// Array of messages for Hannah and Choco
+// Array of messages for target
 const messages = [
     "Have a fantastic day ahead ❤️",
     "You're capable of amazing things ❤️",
@@ -24,7 +24,7 @@ document.getElementById("nameForm").addEventListener("submit", function (event) 
     const userName = document.getElementById("userName").value.trim().toLowerCase(); // Convert input to lowercase
     const greetingDiv = document.getElementById("greetingMessage");
 
-    if (userName === "hannah" || userName === "choco") {
+    if (userName === "Choco" || userName === "choco") {
         // Display a personalized message for valid usernames
         const randomMessage = getRandomMessage();
         greetingDiv.innerHTML = `<p>Hello, <strong>${userName.charAt(0).toUpperCase() + userName.slice(1)}</strong>! ${randomMessage}</p>`;
