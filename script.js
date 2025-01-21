@@ -4,14 +4,14 @@ const messages = [
     "You're the primordial sea to my all devouring narwhal ❤️",
     "Believe in yourself, always ❤️",
     "Keep pushing forward, you've got this ❤️",
-    "You're my favorite, always❤️",
+    "You're my favorite, always ❤️",
     "You make me smile everyday ❤️",
-    "You're beautiful❤️",
+    "You're beautiful ❤️",
     "Can I borrow a kiss? I promise to give it back! ❤️",
     "I miss you ❤️",
     "You make me feel special ❤️",
     "I'm so proud of you ❤️",
-    "hug for you ❤️",
+    "Hug for you ❤️",
 ];
 
 // Function to get a random message
@@ -26,8 +26,8 @@ document.getElementById("nameForm").addEventListener("submit", function (event) 
     const userName = document.getElementById("userName").value.trim().toLowerCase(); // Convert input to lowercase
     const greetingDiv = document.getElementById("greetingMessage");
 
-    if (userName === "Choco" || userName === "choco") {
-        // Display a personalized message for valid usernames
+    if (userName === "choco") {
+        // Display a personalized message for the valid username
         const randomMessage = getRandomMessage();
         greetingDiv.innerHTML = `<p>Hello, <strong>${userName.charAt(0).toUpperCase() + userName.slice(1)}</strong>! ${randomMessage}</p>`;
     } else {
