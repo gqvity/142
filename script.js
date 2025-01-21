@@ -9,9 +9,9 @@ const messages = [
     "You're beautiful❤️",
     "Can I borrow a kiss? I promise to give it back! ❤️",
     "I miss you ❤️",
-    "You make me feel special ❤️"
-    "I'm so proud of you ❤️"
-    "hug for you ❤️"
+    "You make me feel special ❤️",
+    "I'm so proud of you ❤️",
+    "hug for you ❤️",
 ];
 
 // Function to get a random message
